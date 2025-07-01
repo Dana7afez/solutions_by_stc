@@ -4,6 +4,7 @@ import { Globe, ChevronDown } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { getAssetPath } from "@/lib/assets"
 
 export function AnimatedHeader() {
   return (
@@ -13,7 +14,7 @@ export function AnimatedHeader() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image 
-              src="/logo.svg" 
+              src={getAssetPath("logo.svg")} 
               alt="Solutions by STC" 
               width={120}
               height={32}

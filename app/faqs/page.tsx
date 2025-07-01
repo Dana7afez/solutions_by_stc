@@ -7,6 +7,7 @@ import { CategorySelector } from "@/components/category-selector"
 import { FAQList } from "@/components/faq-list"
 import { Button } from "@/components/ui/button"
 import { Search, MessageCircle, Phone } from "lucide-react"
+import { getAssetPath } from "@/lib/assets"
 
 const faqData = {
   registration: [
@@ -204,7 +205,7 @@ export default function FAQsPage() {
 
             <div className="hidden lg:block">
               <Image 
-                src="/faq-illustration.png" 
+                src={getAssetPath("faq-illustration.png")} 
                 alt="FAQ Illustration" 
                 width={400}
                 height={400}
