@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 import { AnimatedHeader } from "@/components/animated-header"
 import { CategorySelector } from "@/components/category-selector"
 import { FAQList } from "@/components/faq-list"
@@ -202,7 +203,13 @@ export default function FAQsPage() {
             </div>
 
             <div className="hidden lg:block">
-              <img src="/faq-illustration.png" alt="FAQ Illustration" className="w-full h-auto max-w-md mx-auto" />
+              <Image 
+                src="/faq-illustration.png" 
+                alt="FAQ Illustration" 
+                width={400}
+                height={400}
+                className="w-full h-auto max-w-md mx-auto" 
+              />
             </div>
           </div>
         </div>
