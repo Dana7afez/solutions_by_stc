@@ -2,6 +2,7 @@
 
 import { Globe } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import {
   NavigationMenu,
@@ -18,7 +19,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Solutions by STC" className="h-8 w-auto" />
+            <Image 
+              src="/logo.svg" 
+              alt="Solutions by STC" 
+              width={120}
+              height={32}
+              className="h-8 w-auto" 
+            />
           </Link>
 
           {/* Navigation */}
